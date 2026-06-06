@@ -18,7 +18,7 @@ A comparison between the initial design concept and the fully functional hardwar
 
 *   **Reactive Monitoring:** 3-second polling cycle displaying values in absolute **Watts** for instant awareness of household load changes.
 *   **Advanced HMI:** High-performance interface using the **LVGL** library with dynamic icons and adaptive color logic.
-*   **Intelligent Night Mode:** The UI automatically switches to a **"NIGHT"** (Dark Mode) state whenever solar production drops to **0W** [25, Conversation History].
+*   **Intelligent Night Mode:** The UI automatically switches to a **"NIGHT"** (Dark Mode) state whenever solar production drops to **0W**.
 *   **Power Management:** Native support for **Deep Sleep**, real-time battery voltage/percentage monitoring, and USB charging detection.
 *   **Physical Interaction:** Onboard buttons (**IO0** and **IO14**) are mapped for manual brightness control and system navigation.
 
@@ -39,7 +39,7 @@ Upon boot, the device displays a splash screen that tracks the initialization of
 Displays the energy flow between the Solar Panels, the House, and the Utility Grid. The header adapts dynamically based on energy metrics:
 *   **EXPORTING (Green):** Active when production exceeds household consumption.
 *   **IMPORTING (Red):** Active when the house is drawing power from the grid.
-*   **NIGHT (Dark):** Active during zero production states [25, Conversation History].
+*   **NIGHT (Dark):** Active during zero production states.
 
 ---
 
@@ -49,7 +49,8 @@ The system is optimized for the **LilyGO T-Display-S3**, featuring a custom phys
 
 *   **Microcontroller:** ESP32-S3R8 Dual-core with **8MB of PSRAM** (mandatory for high-res LVGL buffers).
 *   **Display:** 1.9" IPS LCD (170x320 px) with an 8-bit parallel interface.
-*   **Enclosure:** Custom **3D-printed case** specifically designed for the T-Display-S3 to provide protection and a professional finish [Conversation History].
+*   **Enclosure:** Custom **3D-printed case** specifically designed for the T-Display-S3 to provide protection and a professional finish.
+*   **Enclosure: **myminifactory** https://www.myminifactory.com/object/3d-print-a-case-and-calculator-for-the-lilygo-t-display-s3-touch-development-board-279576
 
 > ![Final Hardware Detail](Assets/Photos/IMG_20260606_160316_small.jpg)  
 > *Detailed view of the hardware inside its custom 3D-printed enclosure.*
