@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComponentTransfer in="blur" result="glow">
+        <feFuncR type="linear" slope="0"/>
+        <feFuncG type="linear" slope="1.5"/>
+        <feFuncB type="linear" slope="0"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g filter="url(#glow-green)">
+    <polygon points="20,60 35,30 85,30 70,60" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="25" y1="50" x2="75" y2="50" stroke="#1A1A1A" stroke-width="3"/>
+    <line x1="30" y1="40" x2="80" y2="40" stroke="#1A1A1A" stroke-width="3"/>
+    <line x1="42" y1="30" x2="35" y2="60" stroke="#1A1A1A" stroke-width="3"/>
+    <line x1="58" y1="30" x2="51" y2="60" stroke="#1A1A1A" stroke-width="3"/>
+    <line x1="74" y1="30" x2="67" y2="60" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M52.5 60 L52.5 75 M40 75 L65 75" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
