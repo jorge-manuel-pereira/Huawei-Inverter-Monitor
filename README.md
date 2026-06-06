@@ -1,7 +1,3 @@
-Here is the updated **en-US** `README.md` file for your GitHub repository. I have updated the "Project Showcase" section to use the `_small.jpg` version of the final photo while maintaining the side-by-side layout for the Startup sequence and the specific hardware photo you requested previously.
-
-***
-
 # Huawei Inverter Monitor (LilyGO T-Display-S3)
 
 This project is a dedicated hardware monitoring solution for **Huawei SUN2000** solar inverters, powered by the **LilyGO T-Display-S3**. It provides real-time visualization of photovoltaic production, household consumption, and grid energy flow through a dynamic Human-Machine Interface (HMI) built with the **LVGL** library.
